@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> حزب مسار</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="bg-white border-b-2 border-gray-400 fixed top-0 left-0 z-50 w-full">
+      <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="image/logo.png" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-3xl mainFont whitespace-nowrap text-black">حزب مسار</span>
+        </a>
+
+        <!-- Toggle button -->
+        <button data-collapse-toggle="mobile-menu" type="button" 
+          class="inline-flex items-center p-2 bg-neutral-100/10 text-black rounded-lg md:hidden hover:bg-teal-700/40 focus:outline-none focus:ring-2 focus:ring-gray-200" 
+          aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">فتح القائمة</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul class="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse mt-4 md:mt-0 p-4 md:p-0 border md:border-0 rounded-lg md:rounded-none">
+            <li>
+              <a href="#vision" 
+                class="menu-link block py-2 px-3 text-teal-600 border-b-2 border-teal-600 md:p-0">
+                الرؤية
+              </a>
+            </li>
+            <li>
+              <a href="#objectives" 
+                class="menu-link block py-2 px-3 text-black hover:text-teal-600 hover:border-b-2 hover:border-teal-600 md:p-0">
+                الأهداف
+              </a>
+            </li>
+            <li>
+              <a href="#strategies" 
+                class="menu-link block py-2 px-3 text-black hover:text-teal-600 hover:border-b-2 hover:border-teal-600 md:p-0">
+                استراتيجيات
+              </a>
+            </li>
+            <li>
+              <a href="#fields" 
+                class="menu-link block py-2 px-3 text-black hover:text-teal-600 hover:border-b-2 hover:border-teal-600 md:p-0">
+                مجالات العمل
+              </a>
+            </li>
+            <li>
+              <a href="#mechanisms" 
+                class="menu-link block py-2 px-3 text-black hover:text-teal-600 hover:border-b-2 hover:border-teal-600 md:p-0">
+                آليات العمل
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="flex flex-col-reverse mt-20 md:mt-0: md:flex-row items-center justify-around h-[680px] md:h-[650px] w-full overflow-hidden">
+      <!-- النص -->
+      <div class="flex flex-col justify-center items-center bg-white md:items-start text-center md:text-right ps-6 md:ps-32 w-full md:w-1/2 h-1/2 md:h-full">
+        <p class="text-xl mb-2 mainColor">نحو مستقبل مشرق</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-black mainFont">حزب مسار</h1>
+        <p class="text-lg md:text-2xl max-w-xl leading-relaxed mb-6 text-neutral-500">
+          معًا نحو مستقبل أفضل للشباب
+        </p>
+        <a href="#join" class="px-6 py-3 bg-white mainColor  font-semibold rounded-xl shadow-md shadow-neutral-400 hover:bg-gray-100 transition">
+          انضم إلينا
+        </a>
+      </div>
+
+      <!-- الصورة -->
+      <div class="w-full md:w-92 h-1/2 md:h-92 relative">
+        <img src="image/masaar.jpg" alt="massar" class="w-full h-full object-cover">
+      </div>
+      
+    </header>
+
+    <!-- Vision Section with Wave -->
+    <section id="vision" class="py-20 px-4 bg-[#f6f6f6] relative overflow-hidden">
+      <div class="section-wave"></div>
+      <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+        <div class="mb-8 text-[#7dc7aa] text-5xl icon-bg">
+          <i class="fas fa-eye text-white"></i>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#7dc7aa]">رؤية حزب مسار</h2>
+        <p class="mt-6 text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
+          حزب شبابي يهدف إلى الرقي بالشباب وتقديم الفرص لهم لتقديم أفكارهم واقتراحاتهم للنهوض بالدولة في مختلف القطاعات،
+          وتوفير استثمارات وفرص عمل، ونشر الوعي والثقافة.
+        </p>
+      </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-20 px-3 relative bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2c7055] mb-4">أهداف الحزب</h2>
+        <p class="text-center text-gray-600 mb-12">نحن نعمل على تحقيق أهداف مستدامة لتمكين الشباب</p>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="objectives-card relative hover:bg-[#bcefd6] cursor-pointer bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-2 transition transform duration-300">
+            <span class="absolute  top-4 left-4 text-6xl font-extrabold text-gray-200">1</span>
+            <div class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-[#fee2e2] mb-4">
+              <i class="fas fa-user-graduate text-[#ef4444] text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#2c7055] mb-3">تمكين الشباب</h3>
+            <p class="text-gray-600 leading-relaxed">
+              تعزيز دور الشباب في المجتمع وتقديم الفرص لهم لتقديم أفكارهم واقتراحاتهم.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="objectives-card  relative hover:bg-[#bcefd6] cursor-pointer bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-2 transition transform duration-300">
+            <span class="absolute top-4 left-4 text-6xl font-extrabold text-gray-200">2</span>
+            <div class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-[#dcfce7] mb-4">
+              <i class="fas fa-chart-line text-[#22c55e] text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#2c7055] mb-3">التنمية الاقتصادية</h3>
+            <p class="text-gray-600 leading-relaxed">
+              توفير استثمارات وفرص عمل للشباب والمساهمة في تنمية الاقتصاد الوطني.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="objectives-card relative hover:bg-[#bcefd6] cursor-pointer bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-2 transition transform duration-300">
+            <span class="absolute top-4 left-4 text-6xl font-extrabold text-gray-200">3</span>
+            <div class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-[#dbeafe] mb-4">
+              <i class="fas fa-lightbulb text-[#3b82f6] text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#2c7055] mb-3">نشر الوعي والثقافة</h3>
+            <p class="text-gray-600 leading-relaxed">
+              تعزيز الوعي الثقافي والاجتماعي والسياسي لدى الشباب والمجتمع.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="objectives-card  relative hover:bg-[#bcefd6] cursor-pointer bg-white shadow-lg rounded-2xl p-6 text-center hover:-translate-y-2 transition transform duration-300">
+            <span class="absolute top-4 left-4 text-6xl font-extrabold text-gray-200">4</span>
+            <div class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-[#fef9c3] mb-4">
+              <i class="fas fa-users text-[#ca8a04] text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#2c7055] mb-3">تنمية المجتمع</h3>
+            <p class="text-gray-600 leading-relaxed">
+              ندعم المبادرات التي تهدف إلى تحسين الحياة الاجتماعية والاقتصادية في المجتمع.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section id="strategies" class="py-20 px-4 bg-[#f8f8f8d8]">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Title -->
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2c7055] mb-4">
+          استراتيجيات الحزب
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          استراتيجيات مبتكرة لتحقيق النجاح
+        </p>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <!-- Content (similar to mission/vision style) -->
+          <div class="space-y-10">
+            <!-- Item 1 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0">
+                <i class="fas fa-people-arrows"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">توفير المنصات</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  إنشاء منتديات ومساحات لتبادل الأفكار والاقتراحات بين الشباب.
+                </p>
+              </div>
+            </div>
+  
+            <!-- Item 2 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">التدريب والتأهيل</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  تقديم برامج تدريبية وتأهيلية للشباب لتعزيز مهاراتهم وقدراتهم.
+                </p>
+              </div>
+            </div>
+  
+            <!-- Item 3 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">التواصل مع الشركاء</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  بناء شراكات مع المؤسسات الحكومية والخاصة لدعم مشاريع الشباب.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16 md:mt-0 md:ms-8">
+            <img class="w-[500px] h-80 object-fill rounded-xl shadow-md" src="image/masaar.jpg" alt="masaar" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fields Section -->
+    <section id="fields" class="py-20 px-4 relative">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Title -->
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2c7055] mb-4">
+          مجالات العمل
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          نحن ندعم مبادرات مبتكرة لتمكين الشباب في مختلف المجالات
+        </p>
+
+        <!-- Cards -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Card 1 -->
+          <div class="creative-card p-6 text-center">
+            <div class="icon-bg">
+              <i class="fas fa-coins text-white text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#51643d] mb-3 px-2">الاقتصاد والاستثمار</h3>
+            <p class="text-gray-600 px-2 leading-relaxed">
+              دعم مشاريع الشباب في مجال الاقتصاد والاستثمار.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="creative-card p-6 text-center">
+            <div class="icon-bg">
+              <i class="fas fa-graduation-cap text-white text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#51643d] mb-3 px-2">التعليم والتدريب</h3>
+            <p class="text-gray-600 px-2 leading-relaxed">
+              تعزيز فرص التعليم والتدريب للشباب.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="creative-card p-6 text-center">
+            <div class="icon-bg">
+              <i class="fas fa-palette text-white text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl text-[#51643d] mb-3 px-2">الثقافة والفنون</h3>
+            <p class="text-gray-600 px-2 leading-relaxed">
+              دعم الفنون والثقافة وتعزيز دور الشباب في هذه المجالات.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mechanisms Section -->
+    <section id="mechanisms" class="py-20 px-4 bg-[#f8f8f8d8]">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Title -->
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#2c7055] mb-4">
+          آليات العمل
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          آليات مبتكرة لدعم الشباب وتعزيز دورهم في المجتمع
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <!-- Image -->
+          <div class="mb-16 md:mb-0">
+            <img
+              class="w-[500px] h-80 object-fill rounded-xl shadow-md"
+              src="image/masaar.jpg"
+              alt="masaar"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="space-y-10 md:ms-8">
+            <!-- Item 1 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0"
+              >
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">العمل التطوعي</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  تشجيع العمل التطوعي والمساهمة في المشاريع المجتمعية.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0"
+              >
+                <i class="fas fa-handshake"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">الشراكات</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  بناء شراكات مع المؤسسات المحلية والدولية لدعم مشاريع الشباب.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-[#7dc7aa] text-white text-2xl flex-shrink-0"
+              >
+                <i class="fas fa-comments"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-black mb-2">التواصل الفعال</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  تعزيز التواصل الفعال بين الشباب والمجتمع.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Step Full Form -->
+    <section id="join" class="py-12 px-5 md:px-12 bg-[#f6f6f6]">
+      <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-10">
+        <h2 class="text-3xl font-extrabold text-center text-[#2c7055] mb-8">
+          استمارة التقديم للحصول على المنحة
+        </h2>
+
+        <form id="regForm" class="space-y-6">
+          <!-- Step 1: Personal Info -->
+          <div class="step">
+            <h3 class="text-xl font-bold text-[#2c7055] mb-4">أولاً: المعلومات الشخصية</h3>
+            <div class="space-y-4">
+              <input type="text" id="fullName" name="fullName" placeholder="الاسم الكامل كما هو في الهوية" required class="w-full p-2 border rounded-lg">
+              <input type="number" id="age" name="age" placeholder="العمر (18 سنة فما فوق)" min="18" required class="w-full p-2 border rounded-lg">
+              <select name="gender" required class="w-full p-2 border rounded-lg">
+                <option value="">اختر الجنس</option>
+                <option value="ذكر">ذكر</option>
+                <option value="أنثى">أنثى</option>
+              </select>
+              <textarea name="address" placeholder="مكان السكن (المحافظة – اللواء – المنطقة – العنوان)" required class="w-full p-2 border rounded-lg"></textarea>
+              <input type="text" name="nationalId" placeholder="رقم الهوية الوطنية" required class="w-full p-2 border rounded-lg">
+              <input type="text" name="degree" placeholder="المستوى التعليمي" required class="w-full p-2 border rounded-lg">
+              <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required class="w-full p-2 border rounded-lg">
+              <input type="text" id="phone" name="phone" placeholder="رقم الهاتف" required class="w-full p-2 border rounded-lg">
+            </div>
+          </div>
+
+          <!--- Step 2: Project Info -->
+          <div class="step hidden">
+            <h3 class="text-xl font-bold text-[#2c7055] mb-4">ثانيًا: معلومات المشروع / الفكرة</h3>
+            <div class="space-y-4">
+              <!-- اسم المشروع -->
+              <input type="text" name="projectName" placeholder="اسم المشروع أو الفكرة" required class="w-full p-2 border rounded-lg">
+
+              <!-- حالة المشروع -->
+              <label class="block font-semibold">حالة المشروع</label>
+              <select id="projectStatus" name="projectStatus" required class="w-full p-2 border rounded-lg">
+                <option value="">اختر حالة المشروع</option>
+                <option value="idea">فكرة قيد الدراسة</option>
+                <option value="ready">فكرة جاهزة للتنفيذ</option>
+                <option value="running">مشروع قائم</option>
+              </select>
+
+              <!-- مشروع قائم -->
+              <div id="runningFields" class="hidden space-y-3">
+                <input type="text" name="establishedYear" placeholder="سنة التأسيس" class="w-full p-2 border rounded-lg">
+                <input type="number" name="employees" placeholder="عدد الموظفين" class="w-full p-2 border rounded-lg">
+                <select name="registered" class="w-full p-2 border rounded-lg">
+                  <option value="">هل المشروع مسجل رسميًا؟</option>
+                  <option>نعم</option>
+                  <option>لا</option>
+                </select>
+                <input type="number" name="customers" placeholder="عدد العملاء/المستفيدين شهريًا" class="w-full p-2 border rounded-lg">
+                <input type="text" name="revenue" placeholder="الإيرادات الشهرية (تقديريًا)" class="w-full p-2 border rounded-lg">
+                <textarea name="achievements" placeholder="أهم الإنجازات التي حققها المشروع" class="w-full p-2 border rounded-lg"></textarea>
+              </div>
+
+              <!-- فكرة -->
+              <div id="ideaFields" class="hidden space-y-3">
+                <input type="text" name="ideaStage" placeholder="المرحلة التي وصلت إليها الفكرة" class="w-full p-2 border rounded-lg">
+                <textarea name="resources" placeholder="الموارد المتوفرة لديك لتنفيذ الفكرة" class="w-full p-2 border rounded-lg"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Project Description -->
+          <div class="step hidden">
+            <h3 class="text-xl font-bold text-[#2c7055] mb-4">ثالثًا: وصف المشروع والفكرة</h3>
+            <div class="space-y-4">
+              <textarea name="projectDesc" placeholder="وصف المشروع أو الفكرة (المنتج/الخدمة، النشاط، الفئة المستهدفة، القيمة المضافة...)" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="problem" placeholder="ما المشكلة أو الحاجة التي يسعى المشروع لحلها؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="innovation" placeholder="ما التميز أو الابتكار في مشروعك مقارنة بالمنافسين؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="target" placeholder="ما الفئة المستهدفة (العمر – الجنس – المنطقة – الدخل المتوقع)؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="marketing" placeholder="استراتيجية التسويق/التوزيع" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="support" placeholder="ما الموارد أو الدعم المطلوب؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="shortGoals" placeholder="أهداف قصيرة المدى (خلال 12 شهرًا)" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="longGoals" placeholder="أهداف طويلة المدى (3 – 5 سنوات)" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="grantUsage" placeholder="كيف ستستثمر منحة 10,000 دينار؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="impact" placeholder="الأثر المتوقع للمشروع (فرص عمل، تحسين خدمات، تعزيز مشاركة...)" required class="w-full p-2 border rounded-lg"></textarea>
+            </div>
+          </div>
+
+          <!-- Step 4: Personal Evaluation -->
+          <div class="step hidden">
+            <h3 class="text-xl font-bold text-[#2c7055] mb-4">رابعًا: تقييم شخصي</h3>
+            <div class="space-y-4">
+              <select name="previousFunding" required class="w-full p-2 border rounded-lg">
+                <option value="">هل سبق أن حصلت على منحة/تمويل/قرض؟</option>
+                <option>نعم</option>
+                <option>لا</option>
+              </select>
+              <textarea name="fundingDetails" placeholder="إذا نعم، اذكر الجهة والمبلغ والهدف" class="w-full p-2 border rounded-lg"></textarea>
+
+              <select name="partners" required class="w-full p-2 border rounded-lg">
+                <option value="">هل لديك شركاء في المشروع؟</option>
+                <option>نعم</option>
+                <option>لا</option>
+              </select>
+              <textarea name="partnersDetails" placeholder="إذا نعم، اذكر الأسماء ونسب الشراكة" class="w-full p-2 border rounded-lg"></textarea>
+
+              <textarea name="challenges" placeholder="ما أبرز التحديات الحالية؟" required class="w-full p-2 border rounded-lg"></textarea>
+              <textarea name="skills" placeholder="ما المهارات أو الخبرات التي تمتلكها؟" required class="w-full p-2 border rounded-lg"></textarea>
+
+              <select name="dedicated" required class="w-full p-2 border rounded-lg">
+                <option value="">هل أنت متفرغ لإدارة المشروع؟</option>
+                <option>نعم</option>
+                <option>لا</option>
+              </select>
+
+              <textarea name="finalWord" placeholder="لماذا تستحق هذه المنحة؟" required class="w-full p-2 border rounded-lg"></textarea>
+            </div>
+
+            <!-- شروط -->
+            <div class="mt-6 text-sm text-gray-700">
+              <h4 class="font-bold mb-2">✅ الشروط العامة للتقديم</h4>
+              <ul class="list-disc pr-6 space-y-1">
+                <li>أن يكون المتقدم أردني الجنسية.</li>
+                <li>أن لا يقل العمر عن 18 عامًا.</li>
+                <li>أن لا يكون قد حصل على أي منحة/قرض سابقًا.</li>
+                <li>الالتزام بتعبئة الاستمارة بمعلومات دقيقة وكاملة.</li>
+                <li>أن يكون المشروع قابلًا للتنفيذ وله أثر ملموس.</li>
+                <li>للجهة المانحة الحق في طلب مقابلة شخصية أو عرض تقديمي.</li>
+                <li>الالتزام بتقديم تقارير دورية بعد المنحة.</li>
+                <li>لا يحق تحويل المنحة لطرف آخر.</li>
+                <li>يحق للجنة استبعاد أي طلب غير مستوفٍ للشروط.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <input type="hidden" name="createdAt">
+          <!-- Navigation Buttons -->
+          <div class="flex justify-between mt-6">
+            <button type="button" id="prevBtn"
+              class="hidden bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-lg">السابق</button>
+            <button type="button" id="nextBtn"
+              class="bg-[#2c7055] hover:bg-[#245d46] text-white px-6 py-2 rounded-lg">التالي</button>
+            <button type="submit" id="submitBtn"
+              class="hidden bg-[#2c7055] hover:bg-[#245d46] text-white px-6 py-2 rounded-lg">إرسال</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2c7055] text-white text-center py-8 ">
+      <div>
+        &copy; 2025 <span class="font-bold">حزب مسار</span> جميع الحقوق محفوظة
+      </div>
+      <div class="mt-2">
+        <a href="mailto:info.woroud@gmail.com" class=" hover:text-gray-300">
+          info.woroud@gmail.com
+        </a>
+      </div>
+    </footer>
+
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
