@@ -9,23 +9,6 @@ const projectStatus = document.getElementById("projectStatus");
 const runningFields = document.getElementById("runningFields");
 const ideaFields = document.getElementById("ideaFields");
 
-  const sr = ScrollReveal({
-    distance: "60px",
-    duration: 1500,
-    delay: 160,
-    reset: true 
-  });
-
-  // كل Section يدخل من اتجاه معين
-  sr.reveal("header", { origin: "top" });
-  sr.reveal("#vision", { origin: "left" });
-  sr.reveal("#objectives .objectives-card", { origin: "bottom", interval: 200 });
-  sr.reveal("#strategies", { origin: "right" });
-  sr.reveal("#fields .creative-card", { origin: "bottom", interval: 200 });
-  sr.reveal("#mechanisms", { origin: "left" });
-  sr.reveal("#join", { origin: "top" });
-  sr.reveal("footer", { origin: "bottom" });
-
 
 projectStatus.addEventListener("change", () => {
   if (projectStatus.value === "running") {
